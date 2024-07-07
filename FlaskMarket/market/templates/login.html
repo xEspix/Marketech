@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}
+Login Page
+{% endblock %}
+
+{% block content %}
+<br>
+<div class="container" style="width: 200px; height: 200px;">
+    <img src="\static\logo.png" class="rounded mx-auto d-block img-thumbnail" alt="Marketech Logo">
+    <br>
+</div>
+<h1 class="h2 mb-3 font-weight-normal" style="text-align: center">Sign in Account</h1>
+<form method="POST" class="form-register" style="color: white">
+    {{ form.hidden_tag() }}
+    <div class="container" style="width: 600px">
+        {{ form.username.label() }}
+        {{ form.username(class="form-control", placeholder="User Name") }}
+        <br>
+        {{ form.password.label() }}
+        {{ form.password(class="form-control", placeholder="Password") }}
+        <br>
+        <div class="d-grid gap-2">
+            {{ form.submit(class="btn btn-primary") }}
+        </div>
+        <br>
+
+        <div class="checkbox mb-2" style="text-align: right">
+            <h6>Do not have an Account ?</h4>
+            <a class="btn btn-sm btn-secondary" href="{{ url_for('register') }}">Sign Up</a>
+        </div>
+</form>
+</div>
+
+{% endblock %}

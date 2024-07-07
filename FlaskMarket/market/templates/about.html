@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}
+About Page
+{% endblock %}
+
+{% block content %}
+<div class="position-relative overflow-hidden p-3 pbg-dark-md-5 m-md-2 text center bg-dark" style="color: black;">
+    <div class="col-md 5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal" style="text-align: center; color:white">About Us</h1>
+        <hr>
+        <h3 style="color: blueviolet;">Welcome to Marketech</h3>
+        <br>
+        <p style="color: whitesmoke;">Marketech, a web application, is designed to provide an exceptional experience
+            tailored to your marketing needs. Our mission is to give the users a friendly interface through which the
+            users can buy and sell marketing items.</p>
+        <br>
+        <h4 style="color: blueviolet;">Features </h4>
+        <br>
+        <ul style="color: whitesmoke;">
+            <li><b>User-Friendly Interface: </b>Intuitive and easy-to-use interface designed for everyone.</li>
+            <li><b>High Performance: </b>Optimized for speed and efficiency to provide a seamless experience.</li>
+            <li><b>Secure and Reliable: </b>Your data's security is our top priority. We use state-of-the-art security measures
+                to protect your information.</li>
+            <li><b>Customizable Settings: </b>Personalize the app to fit your preferences.</li>
+            <li><b>24/7 Support: </b>Our support team is available around the clock to assist you with any issues.</li>
+        </ul>
+    </div>
+</div>
+<footer>
+    <br>
+    <br>
+    <div class="container" style="width: 100px; height: 100px;">
+        <img src="\static\logo.png" class="rounded mx-auto d-block img-thumbnail" alt="Marketech Logo">
+    </div>
+    <p style="text-align: center;">#Marketech</p>
+</footer>
+
+        {% endblock %}

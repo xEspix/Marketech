@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+<div class="position-relative overflow-hidden p-3 pbg-dark-md-5 m-md-2 text center bg-dark" style="color: black;">
+    <div class="col-md 5 p-lg-5 mx-auto my-5">
+        <img src="\static\logo.png" class="rounded mx-auto d-block img-thumbnail" alt="Marketech Logo">
+        <br>
+        <h1 class="display-4 font-weight-normal" style="text-align: center; font-weight: bold; color:honeydew">MARKETECH</h1>
+        <p class="lead front-weight-normal" style="text-align: center; color: blueviolet; font-weight: bold;">Start Purchasing Products and Trade them</p>
+        <br>
+        <div class="d-grid gap-2 col-2 mx-auto">
+        <a class="btn btn-primary " style="text-align: center;" href="{{ url_for('market') }}">Get Started</a>
+        </div>
+    </div>
+    <div class="product-device box-sadow d-none d-md-block"></div>
+    <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+</div>
+{% endblock %}
